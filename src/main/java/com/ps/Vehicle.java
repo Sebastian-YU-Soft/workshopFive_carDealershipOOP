@@ -10,15 +10,15 @@ public class Vehicle {
     private int odometer;
     private double price;
 
-    public Vehicle(int vin, int year, String make, String model, String vehicleType, double price, String color, int odometer) {
+    public Vehicle(int vin, int year, String make, String model, String vehicleType, String color, int odometer, double price) {
         this.vin = vin;
         this.year = year;
         this.make = make;
         this.model = model;
         this.vehicleType = vehicleType;
-        this.price = price;
         this.color = color;
         this.odometer = odometer;
+        this.price = price;
     }
 
     public int getVin() {
@@ -37,20 +37,20 @@ public class Vehicle {
         this.year = year;
     }
 
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
-    }
-
     public String getMake() {
         return make;
     }
 
     public void setMake(String make) {
         this.make = make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
     }
 
     public String getVehicleType() {
@@ -61,20 +61,20 @@ public class Vehicle {
         this.vehicleType = vehicleType;
     }
 
-    public int getOdometer() {
-        return odometer;
-    }
-
-    public void setOdometer(int odometer) {
-        this.odometer = odometer;
-    }
-
     public String getColor() {
         return color;
     }
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public int getOdometer() {
+        return odometer;
+    }
+
+    public void setOdometer(int odometer) {
+        this.odometer = odometer;
     }
 
     public double getPrice() {
@@ -87,16 +87,6 @@ public class Vehicle {
 
     @Override
     public String toString() {
-        return super.toString()
-                "Vehicle{"+
-                "vin" + vin +
-                ",year" + year +
-                ", make" + make + '\'' +
-                ", model" + model + '\'' +
-                ", vehicleType" + vehicleType + '\'' +
-                ", color" + color + '\'' +
-                ", odometer" + odometer +
-                ", price" + price +
-                '}';
+        return super.toString();
     }
 }

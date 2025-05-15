@@ -120,7 +120,7 @@ public class UserInterface {
         System.out.print("Price:");
         double price = Double.parseDouble(scanner.nextLine());
 
-        dealership.addVehicle(new Vehicle())
+        dealership.addVehicle(new Vehicle());
     }
     private void processRemoveVehicleRequest(){
 
