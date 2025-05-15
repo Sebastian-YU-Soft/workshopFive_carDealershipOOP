@@ -117,5 +117,4 @@ public class Dealership {
         }
         inventory.remove(vehicle);
     }
-
 }
