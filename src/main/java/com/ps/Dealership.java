@@ -109,7 +109,12 @@ public class Dealership {
         inventory.add(vehicle);
     }
 
-    public void removeVehicle(Vehicle vehicle) {
+    public void removeVehicle(int vehicle) {
+        for (int i = 0; i < inventory.size(); i++){
+            if (inventory.get(i).getVin() == vehicle){
+                inventory.remove(i);
+            }
+        }
         inventory.remove(vehicle);
     }
 
