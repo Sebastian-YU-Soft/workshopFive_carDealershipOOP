@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class UserInterface {
     private Dealership dealership = new Dealership();
     private Scanner scanner = new Scanner(System.in);
+    private DealershipFileManager fileManager;
 
     private void init(){
         // TODO: Load dealership details from a file
@@ -124,7 +125,7 @@ public class UserInterface {
         String vehicleType = scanner.nextLine();
         List<Vehicle> vehicles = dealership.getVehiclesByType(vehicleType);
         displayVehicles(vehicles);
-    }
+    } 
     private void processGetAllVehiclesRequest(){
         List<Vehicle> vehicles = dealership.getAllVehicles();
         displayVehicles(vehicles);
